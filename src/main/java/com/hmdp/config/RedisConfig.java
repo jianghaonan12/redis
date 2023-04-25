@@ -13,7 +13,6 @@ import java.util.concurrent.TimeUnit;
 public class RedisConfig {
     @Bean
     public RedissonClient redissonClient(){
-        //asd
         Config config = new Config();
         config.useSingleServer().setAddress("redis://192.168.221.128:6379");
         return Redisson.create(config);
