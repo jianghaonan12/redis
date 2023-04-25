@@ -17,10 +17,10 @@ public class RedisConfig {
         config.useSingleServer().setAddress("redis://192.168.221.128:6379");
         return Redisson.create(config);
     }
-    @Bean
-    public RedissonClient redissonClient2(){
-        Config config = new Config();
-        config.useSingleServer().setAddress("redis://192.168.221.128:6380");
-        return Redisson.create(config);
-    }
+//    @Bean
+//    public RedissonClient redissonClient2(){
+//        Config config = new Config();
+//        config.useSingleServer().setAddress("redis://192.168.221.128:6380");
+//        return Redisson.create(config);
+//    }
 }
